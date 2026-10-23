@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fff9fb;
+  --pink-light: #fce7f3;
+  --pink-default: #f4b8c8;
+  --pink-dark: #d4728c;
+  --ink-primary: #111111;
+  --ink-muted: #6b6568;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-primary);
+    color: var(--ink-primary);
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif-editorial {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+}
+
+/* Scrollbar sutil en tonos rosa pastel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff9fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f4b8c8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4728c;
+}
